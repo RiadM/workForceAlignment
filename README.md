@@ -1,24 +1,27 @@
-# README
+# Work Force Alignment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a MVP for the concept we developped at the Ranstand hackathon.
+The goal of this program is to help a central gouvernment to know what is population want and optimize the ressource repartition.
+For the citizen, this app will help them set goals and get feedback from the governement analysis about what's the best course of action to go toward their goals.
 
-Things you may want to cover:
+## License
+All source code in the is available jointly under the MIT License and the Beerware License. See
+[LICENSE.md](LICENSE.md) for details. For now it will be this, but we don't know really what license we want
 
-* Ruby version
+## Getting started
 
-* System dependencies
+First clone the repo and install the needed gems:
 
-* Configuration
+$ bundle install --without production
 
-* Database creation
+Next, migrate the database:
 
-* Database initialization
+$ rails db:migrate
 
-* How to run the test suite
+Run the test suite to verify everything is working
 
-* Services (job queues, cache servers, search engines, etc.)
+$ rails test
 
-* Deployment instructions
+Finaly run the server
 
-* ...
+$ rails server
