@@ -11,8 +11,9 @@ class UsersController < ApplicationController
   	def create
     	@user = User.new(user_params)    # Not the final implementation!
     	if @user.save
-    		flash[:success] = "Welcome to Workforce Alignment"
-      		redirect_to @user
+    		log_in @user
+        flash[:success] = "Welcome to Workforce Alignment"
+      	redirect_to @user
     	else
       		render 'new'
     	end
